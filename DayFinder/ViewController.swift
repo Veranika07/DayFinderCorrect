@@ -32,9 +32,12 @@ class ViewController: UIViewController {
         var dateComponents = DateComponents()
         
         guard let myDay = Int(dayTextField.text ?? ""),let myMonth = Int(monthTextField.text ?? ""), let myYear = Int(yearTextField.text ?? "") else {
-//            #warning("HW: warning for alert for input")
+            basicAlert(title: "Error", message: "Please fill in the fields")
             return
         }
+        
+        
+        
         dateComponents.day = myDay
         dateComponents.month = myMonth
         dateComponents.year = myYear
@@ -48,8 +51,13 @@ class ViewController: UIViewController {
         switch findButton.titleLabel?.text {
         case "Find":
             findButton.setTitle("Clear", for: .normal)
-            let weekday = dateFormatter.string(from: myDate)
-            resultLabel.text = weekday.capitalized
+            if myDay >= 1 && myDay <= 31 && myMonth >= 1 && myMonth <= 12{
+                let weekday = dateFormatter.string(from: myDate)
+                resultLabel.text = weekday.capitalized
+            } else {
+                basicAlert(title: "Error", message: "Please check your date")
+                clearMyTextFields()
+            }
         default:
             findButton.setTitle("Find", for: .normal)
             clearMyTextFields()
@@ -65,6 +73,24 @@ class ViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    
+    func basicAlert(title: String?, message: String?){
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            
+            self.present(alert, animated: true)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Info"{
+            guard let vc = segue.destination as? InfoViewController else {return}
+            vc.infoText = "Bootcamp 2023"
+            vc.nameText = "Veranika Trubovich"
+        }
     }
 }
 

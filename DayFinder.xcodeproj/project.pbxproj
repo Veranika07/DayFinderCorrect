@@ -14,7 +14,7 @@
 		4B60C67C29F4F8D800E8439C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B60C67B29F4F8D800E8439C /* Assets.xcassets */; };
 		4B60C67F29F4F8D800E8439C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B60C67D29F4F8D800E8439C /* LaunchScreen.storyboard */; };
 		4B60C68729F51B8C00E8439C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B60C68629F51B8C00E8439C /* InfoViewController.swift */; };
-		4B60C68929F51CF600E8439C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B60C68829F51CF600E8439C /* SettingsViewController.swift */; };
+		4B60C68B29F925D300E8439C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B60C68A29F925D300E8439C /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		4B60C67E29F4F8D800E8439C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B60C68029F4F8D900E8439C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B60C68629F51B8C00E8439C /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		4B60C68829F51CF600E8439C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4B60C68A29F925D300E8439C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 				4B60C67429F4F8D400E8439C /* SceneDelegate.swift */,
 				4B60C67629F4F8D400E8439C /* ViewController.swift */,
 				4B60C68629F51B8C00E8439C /* InfoViewController.swift */,
-				4B60C68829F51CF600E8439C /* SettingsViewController.swift */,
+				4B60C68A29F925D300E8439C /* SettingsViewController.swift */,
 				4B60C67829F4F8D400E8439C /* Main.storyboard */,
 				4B60C67B29F4F8D800E8439C /* Assets.xcassets */,
 				4B60C67D29F4F8D800E8439C /* LaunchScreen.storyboard */,
@@ -147,7 +147,7 @@
 				4B60C67729F4F8D400E8439C /* ViewController.swift in Sources */,
 				4B60C67329F4F8D400E8439C /* AppDelegate.swift in Sources */,
 				4B60C68729F51B8C00E8439C /* InfoViewController.swift in Sources */,
-				4B60C68929F51CF600E8439C /* SettingsViewController.swift in Sources */,
+				4B60C68B29F925D300E8439C /* SettingsViewController.swift in Sources */,
 				4B60C67529F4F8D400E8439C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
